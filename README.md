@@ -30,6 +30,7 @@ One can use the channels to quickly try a couple different versions of a package
 * `clang.nix`: derivation for building clang from source.
 * `arm-gnu-toolchain-arm-none-eabi-prebuilt.nix`: provides a prebuilt version of the ARM GNU Toolchain in the arm-none-eabi flavor.
 * `arm-gnu-toolchain-source.nix`: exposes the ARM GNU Toolchain source code as a derivation.
+* `arm-gnu-toolchain.nix`: derivation for building the ARM GNU Toolchain from source.
 
 # nix store
 
