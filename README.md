@@ -31,3 +31,11 @@ One can use the channels to quickly try a couple different versions of a package
 * `arm-gnu-toolchain-arm-none-eabi-prebuilt.nix`: provides a prebuilt version of the ARM GNU Toolchain in the arm-none-eabi flavor.
 * `arm-gnu-toolchain-source.nix`: exposes the ARM GNU Toolchain source code as a derivation.
 
+# nix store
+
+The nix store is a directory where all the outputs of nix derivations are stored.
+Over time the store can grow quite large.
+Run the garbage collector in order to reclaim space.
+
+`nix-store --gc --print-dead` shows the paths of all the dead outputs in the store.
+`nix-collect-garbage -d` employs the garbage collector to remove all the dead outputs.
